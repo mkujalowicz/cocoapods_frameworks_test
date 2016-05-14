@@ -13,6 +13,11 @@
 		04F6C4771CE7EE0100F5A6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4761CE7EE0100F5A6C1 /* Assets.xcassets */; };
 		04F6C47A1CE7EE0100F5A6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4781CE7EE0100F5A6C1 /* LaunchScreen.storyboard */; };
 		04F6C4851CE7EE0100F5A6C1 /* cocoapods_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4841CE7EE0100F5A6C1 /* cocoapods_testTests.swift */; };
+		04F6C4971CE7F12600F5A6C1 /* internal_module.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F6C4961CE7F12600F5A6C1 /* internal_module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04F6C49E1CE7F12600F5A6C1 /* internal_module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F6C4941CE7F12600F5A6C1 /* internal_module.framework */; };
+		04F6C4A51CE7F12600F5A6C1 /* internal_moduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4A41CE7F12600F5A6C1 /* internal_moduleTests.swift */; };
+		04F6C4A91CE7F12600F5A6C1 /* internal_module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F6C4941CE7F12600F5A6C1 /* internal_module.framework */; };
+		04F6C4AA1CE7F12600F5A6C1 /* internal_module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04F6C4941CE7F12600F5A6C1 /* internal_module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +28,42 @@
 			remoteGlobalIDString = 04F6C46B1CE7EE0100F5A6C1;
 			remoteInfo = cocoapods_test;
 		};
+		04F6C49F1CE7F12600F5A6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F6C4641CE7EE0100F5A6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F6C4931CE7F12600F5A6C1;
+			remoteInfo = internal_module;
+		};
+		04F6C4A11CE7F12600F5A6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F6C4641CE7EE0100F5A6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F6C46B1CE7EE0100F5A6C1;
+			remoteInfo = cocoapods_test;
+		};
+		04F6C4A71CE7F12600F5A6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F6C4641CE7EE0100F5A6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F6C4931CE7F12600F5A6C1;
+			remoteInfo = internal_module;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04F6C4B01CE7F12600F5A6C1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04F6C4AA1CE7F12600F5A6C1 /* internal_module.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04F6C46C1CE7EE0100F5A6C1 /* cocoapods_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocoapods_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +76,12 @@
 		04F6C4801CE7EE0100F5A6C1 /* cocoapods_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoapods_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6C4841CE7EE0100F5A6C1 /* cocoapods_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoapods_testTests.swift; sourceTree = "<group>"; };
 		04F6C4861CE7EE0100F5A6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F6C4941CE7F12600F5A6C1 /* internal_module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = internal_module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F6C4961CE7F12600F5A6C1 /* internal_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = internal_module.h; sourceTree = "<group>"; };
+		04F6C4981CE7F12600F5A6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F6C49D1CE7F12600F5A6C1 /* internal_moduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = internal_moduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F6C4A41CE7F12600F5A6C1 /* internal_moduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = internal_moduleTests.swift; sourceTree = "<group>"; };
+		04F6C4A61CE7F12600F5A6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F6C4A91CE7F12600F5A6C1 /* internal_module.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +97,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C4901CE7F12600F5A6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C49A1CE7F12600F5A6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F6C49E1CE7F12600F5A6C1 /* internal_module.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +123,8 @@
 			children = (
 				04F6C46E1CE7EE0100F5A6C1 /* cocoapods_test */,
 				04F6C4831CE7EE0100F5A6C1 /* cocoapods_testTests */,
+				04F6C4951CE7F12600F5A6C1 /* internal_module */,
+				04F6C4A31CE7F12600F5A6C1 /* internal_moduleTests */,
 				04F6C46D1CE7EE0100F5A6C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +134,8 @@
 			children = (
 				04F6C46C1CE7EE0100F5A6C1 /* cocoapods_test.app */,
 				04F6C4801CE7EE0100F5A6C1 /* cocoapods_testTests.xctest */,
+				04F6C4941CE7F12600F5A6C1 /* internal_module.framework */,
+				04F6C49D1CE7F12600F5A6C1 /* internal_moduleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +162,36 @@
 			path = cocoapods_testTests;
 			sourceTree = "<group>";
 		};
+		04F6C4951CE7F12600F5A6C1 /* internal_module */ = {
+			isa = PBXGroup;
+			children = (
+				04F6C4961CE7F12600F5A6C1 /* internal_module.h */,
+				04F6C4981CE7F12600F5A6C1 /* Info.plist */,
+			);
+			path = internal_module;
+			sourceTree = "<group>";
+		};
+		04F6C4A31CE7F12600F5A6C1 /* internal_moduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F6C4A41CE7F12600F5A6C1 /* internal_moduleTests.swift */,
+				04F6C4A61CE7F12600F5A6C1 /* Info.plist */,
+			);
+			path = internal_moduleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04F6C4911CE7F12600F5A6C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F6C4971CE7F12600F5A6C1 /* internal_module.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		04F6C46B1CE7EE0100F5A6C1 /* cocoapods_test */ = {
@@ -106,10 +201,12 @@
 				04F6C4681CE7EE0100F5A6C1 /* Sources */,
 				04F6C4691CE7EE0100F5A6C1 /* Frameworks */,
 				04F6C46A1CE7EE0100F5A6C1 /* Resources */,
+				04F6C4B01CE7F12600F5A6C1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04F6C4A81CE7F12600F5A6C1 /* PBXTargetDependency */,
 			);
 			name = cocoapods_test;
 			productName = cocoapods_test;
@@ -134,6 +231,43 @@
 			productReference = 04F6C4801CE7EE0100F5A6C1 /* cocoapods_testTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		04F6C4931CE7F12600F5A6C1 /* internal_module */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F6C4AF1CE7F12600F5A6C1 /* Build configuration list for PBXNativeTarget "internal_module" */;
+			buildPhases = (
+				04F6C48F1CE7F12600F5A6C1 /* Sources */,
+				04F6C4901CE7F12600F5A6C1 /* Frameworks */,
+				04F6C4911CE7F12600F5A6C1 /* Headers */,
+				04F6C4921CE7F12600F5A6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = internal_module;
+			productName = internal_module;
+			productReference = 04F6C4941CE7F12600F5A6C1 /* internal_module.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		04F6C49C1CE7F12600F5A6C1 /* internal_moduleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F6C4B11CE7F12600F5A6C1 /* Build configuration list for PBXNativeTarget "internal_moduleTests" */;
+			buildPhases = (
+				04F6C4991CE7F12600F5A6C1 /* Sources */,
+				04F6C49A1CE7F12600F5A6C1 /* Frameworks */,
+				04F6C49B1CE7F12600F5A6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F6C4A01CE7F12600F5A6C1 /* PBXTargetDependency */,
+				04F6C4A21CE7F12600F5A6C1 /* PBXTargetDependency */,
+			);
+			name = internal_moduleTests;
+			productName = internal_moduleTests;
+			productReference = 04F6C49D1CE7F12600F5A6C1 /* internal_moduleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,6 +282,13 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					04F6C47F1CE7EE0100F5A6C1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 04F6C46B1CE7EE0100F5A6C1;
+					};
+					04F6C4931CE7F12600F5A6C1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					04F6C49C1CE7F12600F5A6C1 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 04F6C46B1CE7EE0100F5A6C1;
 					};
@@ -168,6 +309,8 @@
 			targets = (
 				04F6C46B1CE7EE0100F5A6C1 /* cocoapods_test */,
 				04F6C47F1CE7EE0100F5A6C1 /* cocoapods_testTests */,
+				04F6C4931CE7F12600F5A6C1 /* internal_module */,
+				04F6C49C1CE7F12600F5A6C1 /* internal_moduleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +327,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		04F6C47E1CE7EE0100F5A6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C4921CE7F12600F5A6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C49B1CE7F12600F5A6C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +367,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04F6C48F1CE7F12600F5A6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C4991CE7F12600F5A6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F6C4A51CE7F12600F5A6C1 /* internal_moduleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +389,21 @@
 			isa = PBXTargetDependency;
 			target = 04F6C46B1CE7EE0100F5A6C1 /* cocoapods_test */;
 			targetProxy = 04F6C4811CE7EE0100F5A6C1 /* PBXContainerItemProxy */;
+		};
+		04F6C4A01CE7F12600F5A6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F6C4931CE7F12600F5A6C1 /* internal_module */;
+			targetProxy = 04F6C49F1CE7F12600F5A6C1 /* PBXContainerItemProxy */;
+		};
+		04F6C4A21CE7F12600F5A6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F6C46B1CE7EE0100F5A6C1 /* cocoapods_test */;
+			targetProxy = 04F6C4A11CE7F12600F5A6C1 /* PBXContainerItemProxy */;
+		};
+		04F6C4A81CE7F12600F5A6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F6C4931CE7F12600F5A6C1 /* internal_module */;
+			targetProxy = 04F6C4A71CE7F12600F5A6C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -371,6 +558,66 @@
 			};
 			name = Release;
 		};
+		04F6C4AB1CE7F12600F5A6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = internal_module/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.internal-module";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		04F6C4AC1CE7F12600F5A6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = internal_module/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.internal-module";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		04F6C4AD1CE7F12600F5A6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = internal_moduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.internal-moduleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cocoapods_test.app/cocoapods_test";
+			};
+			name = Debug;
+		};
+		04F6C4AE1CE7F12600F5A6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = internal_moduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.internal-moduleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cocoapods_test.app/cocoapods_test";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -390,12 +637,30 @@
 				04F6C48B1CE7EE0100F5A6C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F6C48C1CE7EE0100F5A6C1 /* Build configuration list for PBXNativeTarget "cocoapods_testTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04F6C48D1CE7EE0100F5A6C1 /* Debug */,
 				04F6C48E1CE7EE0100F5A6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F6C4AF1CE7F12600F5A6C1 /* Build configuration list for PBXNativeTarget "internal_module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F6C4AB1CE7F12600F5A6C1 /* Debug */,
+				04F6C4AC1CE7F12600F5A6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F6C4B11CE7F12600F5A6C1 /* Build configuration list for PBXNativeTarget "internal_moduleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F6C4AD1CE7F12600F5A6C1 /* Debug */,
+				04F6C4AE1CE7F12600F5A6C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
