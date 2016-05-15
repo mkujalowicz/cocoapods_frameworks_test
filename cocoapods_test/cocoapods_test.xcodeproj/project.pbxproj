@@ -273,7 +273,6 @@
 					};
 					04F6C49C1CE7F12600F5A6C1 = {
 						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 04F6C46B1CE7EE0100F5A6C1;
 					};
 				};
 			};
@@ -597,7 +596,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.internal-moduleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cocoapods_test.app/cocoapods_test";
 			};
 			name = Debug;
 		};
@@ -608,7 +606,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.internal-moduleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cocoapods_test.app/cocoapods_test";
 			};
 			name = Release;
 		};
