@@ -18,6 +18,8 @@
 		04F6C4A51CE7F12600F5A6C1 /* internal_moduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4A41CE7F12600F5A6C1 /* internal_moduleTests.swift */; };
 		04F6C4A91CE7F12600F5A6C1 /* internal_module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F6C4941CE7F12600F5A6C1 /* internal_module.framework */; };
 		04F6C4AA1CE7F12600F5A6C1 /* internal_module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04F6C4941CE7F12600F5A6C1 /* internal_module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04F6C4B31CE7F4D200F5A6C1 /* CustomBEMSimpleLineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4B21CE7F4D200F5A6C1 /* CustomBEMSimpleLineGraphView.swift */; };
+		04F6C4B51CE7F96E00F5A6C1 /* BEMSimpleLineGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F6C4B41CE7F96E00F5A6C1 /* BEMSimpleLineGraph.framework */; };
 		CAFA2D36D7B9B0A4790A63A5 /* Pods_cocoapods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3E6920A0DE0822E3ADED67 /* Pods_cocoapods_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		04F6C49D1CE7F12600F5A6C1 /* internal_moduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = internal_moduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6C4A41CE7F12600F5A6C1 /* internal_moduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = internal_moduleTests.swift; sourceTree = "<group>"; };
 		04F6C4A61CE7F12600F5A6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F6C4B21CE7F4D200F5A6C1 /* CustomBEMSimpleLineGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBEMSimpleLineGraphView.swift; sourceTree = "<group>"; };
+		04F6C4B41CE7F96E00F5A6C1 /* BEMSimpleLineGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BEMSimpleLineGraph.framework; path = "../../../../Library/Developer/Xcode/DerivedData/cocoapods_test-dzollsokbvcloicxnmooavefdtrz/Build/Products/Debug-iphonesimulator/BEMSimpleLineGraph/BEMSimpleLineGraph.framework"; sourceTree = "<group>"; };
 		5F1DB87F4595A0F43BCF43E0 /* Pods-cocoapods_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapods_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-cocoapods_test/Pods-cocoapods_test.release.xcconfig"; sourceTree = "<group>"; };
 		6971D0B35AD5CF8299C833F0 /* Pods-cocoapods_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapods_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cocoapods_test/Pods-cocoapods_test.debug.xcconfig"; sourceTree = "<group>"; };
 		BB3E6920A0DE0822E3ADED67 /* Pods_cocoapods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cocoapods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F6C4B51CE7F96E00F5A6C1 /* BEMSimpleLineGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +179,7 @@
 			children = (
 				04F6C4961CE7F12600F5A6C1 /* internal_module.h */,
 				04F6C4981CE7F12600F5A6C1 /* Info.plist */,
+				04F6C4B21CE7F4D200F5A6C1 /* CustomBEMSimpleLineGraphView.swift */,
 			);
 			path = internal_module;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 		253732C3D5EE657C4645F7EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04F6C4B41CE7F96E00F5A6C1 /* BEMSimpleLineGraph.framework */,
 				BB3E6920A0DE0822E3ADED67 /* Pods_cocoapods_test.framework */,
 			);
 			name = Frameworks;
@@ -446,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F6C4B31CE7F4D200F5A6C1 /* CustomBEMSimpleLineGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +600,7 @@
 			baseConfigurationReference = 6971D0B35AD5CF8299C833F0 /* Pods-cocoapods_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = cocoapods_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.cocoapods-test";
@@ -604,6 +613,7 @@
 			baseConfigurationReference = 5F1DB87F4595A0F43BCF43E0 /* Pods-cocoapods_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = cocoapods_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.cocoapods-test";
@@ -638,6 +648,7 @@
 		04F6C4AB1CE7F12600F5A6C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -649,6 +660,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.internal-module";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -657,6 +669,7 @@
 		04F6C4AC1CE7F12600F5A6C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

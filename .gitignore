@@ -61,3 +61,5 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
+cocoapods_test/Pods
+Podfile.lock
