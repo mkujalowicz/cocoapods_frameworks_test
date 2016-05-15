@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import BEMSimpleLineGraphView
+import BEMSimpleLineGraph
 
 @IBDesignable public class CustomBEMSimpleLineGraphView: BEMSimpleLineGraphView {
     
