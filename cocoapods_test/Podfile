@@ -1,27 +1,28 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |configuration|
-            next
-            xcconfig_path = configuration.base_configuration_reference.real_path
-            xcconfig_settings = Hash[*File.read(xcconfig_path).lines.map{|x| x.tr("\n","").split(/\s*=\s*/, 2)}.flatten]
-            xcconfig_settings['CONFIGURATION_BUILD_DIR'] = '$(PODS_CONFIGURATION_BUILD_DIR)'
-            File.open(xcconfig_path, "w") { |file|
-                xcconfig_settings.each do |key,value|
-                    file.puts "#{key} = #{value}"
-                end
-            }            
-        end
-    end
-end
+# Solution 2
+# post_install do |installer|
+#    installer.pods_project.targets.each do |target|
+#        target.build_configurations.each do |configuration|
+#            xcconfig_path = configuration.base_configuration_reference.real_path
+#            xcconfig_settings = Hash[*File.read(xcconfig_path).lines.map{|x| x.tr("\n","").split(/\s*=\s*/, 2)}.flatten]
+#            xcconfig_settings['CONFIGURATION_BUILD_DIR'] = '$(PODS_CONFIGURATION_BUILD_DIR)'
+#            File.open(xcconfig_path, "w") { |file|
+#                xcconfig_settings.each do |key,value|
+#                    file.puts "#{key} = #{value}"
+#                end
+#            }
+#        end
+#    end
+# end
 
 use_frameworks!
 
 target 'cocoapods_test' do
     pod 'BEMSimpleLineGraph'
-    
+
+#    Solution 1
 #    target 'internal_moduleTests' do
 #        inherit! :search_paths
 #    end
@@ -30,3 +31,4 @@ target 'cocoapods_test' do
 #        inherit! :search_paths
 #    end
 end
+
