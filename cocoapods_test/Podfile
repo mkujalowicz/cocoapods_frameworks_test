@@ -21,14 +21,13 @@ use_frameworks!
 
 target 'cocoapods_test' do
     pod 'BEMSimpleLineGraph'
-
-#    Solution 1
-#    target 'internal_moduleTests' do
-#        inherit! :search_paths
-#    end
-#    
-#    target 'internal_module' do
-#        inherit! :search_paths
-#    end
+    
+    target 'internal_moduleTests' do
+        inherit! :search_paths
+    end
+    
+    target 'internal_module' do
+        inherit! :search_paths
+    end
 end
 
